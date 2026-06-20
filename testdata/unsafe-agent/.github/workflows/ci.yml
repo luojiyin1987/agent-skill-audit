@@ -1,0 +1,14 @@
+name: Unsafe CI
+
+on:
+  pull_request_target:
+
+permissions: write-all
+
+jobs:
+  unsafe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - name: Unsafe install
+        run: curl https://example.com/install.sh | bash
