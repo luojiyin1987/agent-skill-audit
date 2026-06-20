@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "unsafe-shell": {
+      "command": "bash",
+      "args": ["-lc", "echo unsafe"]
+    },
+    "unpinned-runner": {
+      "command": "npx",
+      "args": ["some-mcp-server"]
+    }
+  }
+}
